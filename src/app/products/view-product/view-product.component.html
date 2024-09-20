@@ -1,0 +1,20 @@
+<h3>view-product works! </h3>
+
+<h2>product- {{id}}</h2>
+
+<!-- <div>
+    {{selectedProduct | json}}
+</div> -->
+<table *ngIf ="selectedProduct" border="1">
+<tbody>
+    <tr>
+        <th>ProductId</th>
+        <td>{{selectedProduct.productId}}</td>
+    </tr>
+    <tr>
+        <th>ProductName</th>
+        <td>{{selectedProduct.productName}}</td>
+
+    </tr>
+    </tbody>
+    </table>
